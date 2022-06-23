@@ -166,6 +166,7 @@ input[type="search"]::-webkit-search-cancel-button{
     margin: 5px 0;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: .5s;
 }
 
 .options .bt-side-menu:hover,
