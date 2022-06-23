@@ -1,0 +1,263 @@
+/*====== FONTS ======*/
+@font-face{font-family: 'Poppins Light'; src: url("../fonts/Poppins-Light.ttf");}
+@font-face{font-family: 'Poppins Regular'; src: url("../fonts/Poppins-Regular.ttf");}
+@font-face{font-family: 'Poppins Medium'; src: url("../fonts/Poppins-Medium.ttf");}
+@font-face{font-family: 'Poppins SemiBold'; src: url("../fonts/Poppins-SemiBold.ttf");}
+@font-face{font-family: 'Poppins Bold'; src: url("../fonts/Poppins-Bold.ttf");}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root{
+    --width-sidebar: 250px;
+}
+
+body{
+    font-family: "Poppins Regular";
+    font-size: 12px;
+    min-width: 290px;
+    background-color: #F1F2F6;
+    color: black;
+}
+
+/*====== GERAL ======*/
+.row{
+    width: 100%;
+    float: left;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.m-5{
+	margin-top: 5px;
+}
+
+.m-10{
+    margin-top: 10px;
+}
+
+.m-20{
+    margin-top: 20px;
+}
+
+.m-30{
+    margin-top: 30px;
+}
+
+.m-50{
+    margin-top: 50px;
+}
+
+.m-70{
+    margin-top: 70px;
+}
+
+.area-content .content-background .content::-webkit-scrollbar{
+    width: 20px;
+}
+
+.area-content .content-background .content::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.area-content .content-background .content::-webkit-scrollbar-thumb{
+    background: #606060;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+.area-content .content-background .content::-webkit-scrollbar-thumb:hover{
+    background: rgba(96, 96, 96,0.7);
+}
+
+.all-content{
+    width: 100%;
+    height: 100%;
+	position: fixed;
+	overflow-y: auto;
+    background-color: #e5e5e5;
+}
+
+/*====== MENU ======*/
+
+.side-menu{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background: white;
+    z-index: 100;
+	overflow: auto;
+    border-radius: 0px 48px 48px 0px;
+}
+
+.logo-side-menu{
+    width: 100%;
+    float: left;
+    display: flex;
+	justify-content: center;
+    margin: 30px 0px;
+}
+
+.logo-side-menu img{
+    width: 100%;
+}
+
+#search{
+	display: flex;
+	align-items: center;
+}
+
+.input-search{
+    width: 230px;
+    height: 30px;
+    border-radius: 40px;
+    border: 1px solid #131639;
+    font-size: 14px;
+    color: #131639;
+    float: left;
+    padding-right: 20px;
+    outline: none !important;
+    padding-left: 46px;
+}
+
+.icon-search{
+	left: 25px;
+    position: absolute;
+	z-index: 2;
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+    display: none;  
+}
+
+.option-side-menu{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.title-side-menu{
+    width: 100%;
+    color: #828496;
+    align-items: center;
+    font-size: 16px;
+	text-transform: uppercase;
+    font-family: "Poppins Medium";
+}
+
+.options .bt-side-menu{
+    width: 90%;
+    display: flex;
+    color: black;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.options .bt-side-menu:hover,
+.options .bt-side-menu.active{
+    color: white;
+    background-color: #3C98FA;
+}
+
+.options .bt-side-menu i{
+    float: left;
+    font-size: 18px;
+}
+
+.options .bt-side-menu p{
+    float: left;
+	font-size: 12px;
+    padding-left: 10px;
+    font-family: "Poppins Regular";
+	text-decoration: none !important;
+}
+
+
+/*====== CONTEÚDO DA PÁGINA ======*/
+
+.area-content{
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+	padding-left: 260px;
+}
+
+.area-content .topbar{
+    width: 100%;
+    height: 50px;
+}
+
+.area-content .content-background{
+    width: 95%;
+    height: calc(100% - 100px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.area-content .content-background .content{
+    width: 100%;
+    height: 95%;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.content .page-title{
+    color: #828496;
+    font-family: "Poppins Regular";
+}
+
+.content .option-name{
+    color: black;
+    font-family: "Poppins SemiBold";
+    font-size: 20px;
+}
+
+.add-content{
+    padding: 5px;
+    transition: .5s;
+}
+
+.add-content i{
+    font-size: 20px;
+    padding: 5px;
+    color: #3C98FA;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.add-content i:hover{
+    background-color: #3C98FA;
+    color: white;
+}
+
+
+
+
+

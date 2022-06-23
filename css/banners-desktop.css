@@ -1,0 +1,107 @@
+/*====== FONTS ======*/
+@font-face{font-family: 'Poppins Light'; src: url("../fonts/Poppins-Light.ttf");}
+@font-face{font-family: 'Poppins Regular'; src: url("../fonts/Poppins-Regular.ttf");}
+@font-face{font-family: 'Poppins Medium'; src: url("../fonts/Poppins-Medium.ttf");}
+@font-face{font-family: 'Poppins SemiBold'; src: url("../fonts/Poppins-SemiBold.ttf");}
+@font-face{font-family: 'Poppins Bold'; src: url("../fonts/Poppins-Bold.ttf");}
+
+/*====== TABLES ======*/
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+table thead tr td {
+    text-align: left;
+    text-transform: capitalize;
+    color: hsl(234, 9%, 55%);
+    font-size: 12px;
+    font-family: "Poppins Medium";
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+
+table tbody tr td {
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+    font-size: 11px;
+}
+
+table thead tr td:nth-child(1),
+table thead tr td:nth-child(5),
+table thead tr td:nth-child(7),
+table tbody tr td:nth-child(1),
+table tbody tr td:nth-child(5),
+table tbody tr td:nth-child(7){
+    text-align: center;
+}
+
+.edit-delete{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.edit-delete i{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+    color: #131639;
+}
+
+.edit-delete i:hover{
+    color: white;
+    background-color: #131639;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

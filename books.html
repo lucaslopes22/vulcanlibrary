@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+            Vulcan - Livros
+        </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" href="img/icon-vulcan.svg" type="image/x-icon" />
+        <meta name="theme-color" content="#F5F5FC">
+        <meta name="msapplication-navbutton-color" content="#F5F5FC">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5" />
+        <meta property="og:keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5" />
+        
+        <!-- ===== CSS ===== -->
+        <link href="css/default-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:1000px)">
+        <link href="css/books-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:1000px)">
+
+        <!-- ===== ICONS ===== -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <div class="all-content">
+
+            <div class="side-menu">
+                <div class="logo-side-menu">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="Logo Vulcan Library">
+                    </a>
+                </div>
+
+                <div class="row center" id="search">
+                    <img src="img/icon-search.svg" class="icon-search" alt="Ícone Pesquisar">
+                    <input type="search" id="input-search" class="input-search" placeholder="Pesquisar">
+                </div>
+
+                <div class="row m-10">
+                    <div class="option-side-menu">
+						<div class="title-side-menu">ECOMMERCE</div>
+                        <div class="options">
+                            <a href="books.html" class="bt-side-menu active">
+                                <i class="bx bx-book"></i>
+                                <p>Livros</p>
+                            </a>
+
+                            <a href="banners.html" class="bt-side-menu">
+                                <i class="bx bx-images"></i>
+                                <p>Banners</p>
+                            </a>
+						</div>
+					</div>
+
+                    <div class="option-side-menu">
+						<div class="title-side-menu">PESSOAS</div>
+                        <div class="options m-5">
+                            <a href="employees.html" class="bt-side-menu">
+                                <i class="bx bx-user"></i>
+                                <p>Colaboradores</p>
+                            </a>
+						</div>
+					</div>
+                </div>
+            </div>
+
+            <div class="area-content">
+                <div class="topbar">
+
+                </div>
+
+                <div class="content-background">
+                    <div class="content">
+                        <div class="row">
+                            <div class="page-title">Ecommerce</div>
+                            <div class="option-name">Livros</div>
+
+                            <div class="add-content">
+                                <i class="bx bx-plus m-20"></i>
+                            </div>
+                        </div>
+
+                        <div class="row center">
+                            <table class="m-10">
+                                <thead>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Capa</td>
+                                        <td>Título</td>
+                                        <td>Autor</td>
+                                        <td>Preço</td>
+                                        <td>Descrição</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>0001</td>
+                                        <td>
+                                            <div class="book-cover">
+                                                <img src="img/books/a-culpa-e-das-estrelas.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>A Culpa É Das Estrelas</td>
+                                        <td>John Green</td>
+                                        <td>R$ 30,00</td>
+                                        <td>Hazel é uma paciente terminal. Ainda que, por um milagre da medicina...</td>
+                                        <td><span class="status visible">Visível</span></td>
+                                        <td>
+                                            <div class="edit-delete" style="display: flex; align-items: center;justify-content: space-around;font-size: 14px;">
+                                                <i class="bx bx-edit"></i>
+                                                <i class="bx bx-trash-alt"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>0002</td>
+                                        <td>
+                                            <div class="book-cover">
+                                                <img src="img/books/destrua-este-diario.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td>Destrua Este Diário</td>
+                                        <td>Keri Smith</td>
+                                        <td>R$ 30,00</td>
+                                        <td>Keri Smith, ilustradora e artista canadense, inventou um tipo diferente...</td>
+                                        <td><span class="status visible">Visível</span></td>
+                                        <td>
+                                            <div class="edit-delete" style="display: flex; align-items: center;justify-content: space-around;font-size: 14px;">
+                                                <i class="bx bx-edit"></i>
+                                                <i class="bx bx-trash-alt"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="zoom-image">
+            <div class="close">
+                <i class="bx bx-x" id="close-modal"></i>
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <!-- ===== JS ===== -->
+        <script text="text/javascript" src="js/default.js"></script>
+    </body>
+</html>

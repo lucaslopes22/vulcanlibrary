@@ -1,0 +1,197 @@
+/*====== FONTS ======*/
+@font-face{font-family: 'Poppins Light'; src: url("../fonts/Poppins-Light.ttf");}
+@font-face{font-family: 'Poppins Regular'; src: url("../fonts/Poppins-Regular.ttf");}
+@font-face{font-family: 'Poppins Medium'; src: url("../fonts/Poppins-Medium.ttf");}
+@font-face{font-family: 'Poppins SemiBold'; src: url("../fonts/Poppins-SemiBold.ttf");}
+@font-face{font-family: 'Poppins Bold'; src: url("../fonts/Poppins-Bold.ttf");}
+
+/*====== TABLES ======*/
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+table thead tr td {
+    text-align: left;
+    text-transform: capitalize;
+    color: hsl(234, 9%, 55%);
+    font-size: 12px;
+    font-family: "Poppins Medium";
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+
+table tbody tr td {
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+    font-size: 11px;
+}
+
+table thead tr td:nth-child(1),
+table thead tr td:nth-child(5),
+table thead tr td:nth-child(7),
+table tbody tr td:nth-child(1),
+table tbody tr td:nth-child(5),
+table tbody tr td:nth-child(7){
+    text-align: center;
+}
+
+.status{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.status.visible::before{
+    background-color: #16C48E;
+}
+
+.status.hidden::before{
+    background-color: #E84041;
+}
+
+.edit-delete{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.edit-delete i{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+    color: #131639;
+}
+
+.edit-delete i:hover{
+    color: white;
+    background-color: #3C98FA;
+}
+
+.book-cover{
+    width: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.book-cover img{
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.zoom-image{
+    width: 200px;
+    padding: 30px 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    transition: .5s;
+}
+
+.zoom-image i{
+    position: absolute;
+    font-size: 25px;
+    color: #3C98FA;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.zoom-image i:hover{
+    transform: scale(1.2);
+    color: #1875d8;
+}
+
+.zoom-image img{
+    max-width: 100%;
+    object-fit: fill;
+    transition: .5s;
+}
+
+.zoom-image.active{
+    opacity: 1;
+    top: 50%;
+}
+
+.all-content.active{
+    filter: blur(10px);
+	pointer-events: none;
+	user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

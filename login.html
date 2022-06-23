@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+            Vulcan - Login
+        </title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" href="img/icon-vulcan.svg" type="image/x-icon" />
+        <meta name="theme-color" content="#F5F5FC">
+        <meta name="msapplication-navbutton-color" content="#F5F5FC">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5" />
+        <meta property="og:keywords"
+            content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5" />
+        
+        <!-- ===== CSS ===== -->
+        <link href="css/login-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:1000px)">
+
+        <!-- ===== ICONS ===== -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="all-content">
+            <div class="illustration">
+                <img src="img/illustration-book.svg" alt="">
+            </div>
+
+            <div class="login">
+                <div class="icon">
+                    <img src="img/icon-vulcan.svg" alt="">
+                </div>
+
+                <div class="title m-20">
+                    <p>Login</p>
+                </div>
+
+                <form action="login.php" method="post" class="m-30">
+                    <div class="user">
+                        <i class="bx bx-user"></i>
+                        <input type="text" name="fuser" required placeholder="Usuário" class="input" id="user">
+                    </div>
+
+                    <div class="pass m-20">
+                        <i class="bx bx-lock-alt"></i>
+                        <input type="password" name="fpass" required placeholder="Senha" class="input" id="pass">
+                    </div>
+                    <input type="submit" value="Acessar" class="button m-20">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
